@@ -1,21 +1,75 @@
 title: Welcome to cocotb
-footer: learn_cocotb — welcome to cocotb
+footer: learn_cocotb — intro
 slides:
 - type: title
   title: Welcome to cocotb
-  subtitle: Scaffold module — expand with module-slides when recording
-  notes: Welcome to Welcome to cocotb. This is a scaffold transcript for learn_cocotb.
+  subtitle: Python can drive your testbench while the simulator owns time and the
+    DUT
+  notes: 'Python can drive your testbench while the simulator owns time and the DUT.
+    This short clip welcomes you to learn cocotb—cocotb triggers, DUT handles, and
+    self-check patterns before you grow into pyuvm methodology. You will see how the
+    course is meant to be used, not every API on day one. Two practice tracks share
+    the same ideas: a real cocotb shell and browser sketches.'
 - type: bullets
-  title: What you practice
+  title: Why cocotb
   bullets:
-  - Primary surface - offline / bridge
-  - Track A - local / offline practice
-  - Track B - browser lab when shipped
-  notes: Practice both tracks when you can. Browser labs build intuition; offline builds fidelity.
+  - SystemVerilog testbenches are powerful
+  - More, while still talking to real RTL
+  - This course builds literacy you can reuse with Verilator or Icarus
+  notes: SystemVerilog testbenches are powerful, but many teams already live in Python
+    for scripts, CI, and data. cocotb lets you write async Python coroutines that
+    await simulator events—clock edges, timers, and more—while still talking to real
+    RTL. This course builds literacy you can reuse with Verilator or Icarus, not a
+    full commercial VIP flow in the browser.
 - type: bullets
-  title: Your turn
+  title: Two tracks, one idea
   bullets:
-  - Open EXAMPLES.md and work one prompt
-  - Open the browser lab if this module has a tool id
-  - Check off CHECKLIST.md
-  notes: Complete the checklist for at least one track, then take the short quiz.
+  - Every lab module offers two ways to practice
+  - Makefile runs feel like work you will keep
+  - Waveform literacy, so you can build intuition without finishing every install
+    first
+  - You may do either track, or both
+  notes: Every lab module offers two ways to practice. The real cocotb track uses
+    local Python with cocotb and a simulator such as Verilator, so installs, awaits,
+    and Makefile runs feel like work you will keep. The browser lab track uses interactive
+    sketches on the learning platform—async test shape, triggers, DUT handle, scoreboard,
+    and waveform literacy—so you can build intuition without finishing every install
+    first. You may do either track, or both.
+- type: bullets
+  title: Set up the real cocotb track
+  bullets:
+  - Install Python three, cocotb, and a free simulator, Verilator is a common choice
+  - Open this course in the monorepo and skim the two-track doc for exact tool names
+  - You do not need a perfect farm on day one; module ten is the dedicated offline
+    run
+  - For now, confirm you know where the examples prompts live in each module folder
+  notes: Install Python three, cocotb, and a free simulator—Verilator is a common
+    choice. Open this course in the monorepo and skim the two-track doc for exact
+    tool names. You do not need a perfect farm on day one; module ten is the dedicated
+    offline run. For now, confirm you know where the examples prompts live in each
+    module folder.
+- type: two_column
+  title: Set up the browser lab track
+  left:
+  - From the monorepo
+  - Look for the cocotb sketches, async testbench, triggers, DUT handle, scoreboard
+  - If you prefer, use the published tools site instead
+  - Either way, open one sketch once so you know the layout
+  right: assets/tools-index.png
+  notes: 'From the monorepo, serve the platform folder with a simple local web server,
+    then open the tools index in your browser. Look for the cocotb sketches—async
+    testbench, triggers, DUT handle, scoreboard, and waveform lab—plus shared verification
+    sketches you will reuse later. If you prefer, use the published tools site instead.
+    Either way, open one sketch once so you know the layout: challenge panel, workspace,
+    and Check.'
+- type: bullets
+  title: How to move through modules
+  bullets:
+  - For each module
+  - Browser labs teach concepts; the real track keeps fidelity
+  - 'When you finish this intro checklist, continue to the first lab: Python async
+    testbench'
+  notes: 'For each module, read the README for the outcome, pick a track—or both—then
+    work the checklist and the short quiz when you are ready. Browser labs teach concepts;
+    the real track keeps fidelity. When you finish this intro checklist, continue
+    to the first lab: Python async testbench.'

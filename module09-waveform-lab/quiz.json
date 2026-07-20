@@ -6,42 +6,48 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "A digital waveform plot shows…",
       "choices": [
-        "Waves literacy",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "each watched signal's value over simulation time",
+        "only the Python test source text",
+        "place-and-route congestion",
+        "analog SPICE currents only"
       ],
       "answer": 0,
-      "explain": "Waves literacy"
+      "explain": "Value vs time per signal."
     },
     {
       "id": "q2",
-      "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
-      "answer": false,
-      "explain": "Literacy only."
+      "type": "multiple_choice",
+      "prompt": "D-FF starter: q updates at…",
+      "choices": [
+        "the posedge of clk (nonblocking update), not when d alone toggles mid-cycle",
+        "random times",
+        "only when cocotb finishes",
+        "negedge only in this starter"
+      ],
+      "answer": 0,
+      "explain": "Sample on rising clk edge."
     },
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
+      "prompt": "On a forever #5 clock, a full period is usually…",
       "choices": [
-        "waveform-lab",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
+        "10 time units (high 5 + low 5) in this starter TB",
+        "1 time unit always",
+        "undefined without $finish",
+        "equal to the counter width"
       ],
       "answer": 0,
-      "explain": "Lab id."
+      "explain": "Toggle every 5 → period 10."
     },
     {
       "id": "q4",
       "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
-      "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "prompt": "Eyeballing the wave replaces self-check compares as the pass criterion.",
+      "answer": false,
+      "explain": "Waves debug; self-check decides pass/fail."
     }
   ]
 }

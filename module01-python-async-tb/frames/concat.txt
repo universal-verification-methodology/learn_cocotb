@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module01-python-async-tb/frames/slide-1.png'
+duration 27.576
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module01-python-async-tb/frames/slide-2.png'
+duration 28.344
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module01-python-async-tb/frames/slide-3.png'
+duration 28.584
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module01-python-async-tb/frames/slide-4.png'
+duration 32.136
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module01-python-async-tb/frames/slide-5.png'
+duration 28.944
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module01-python-async-tb/frames/slide-6.png'
+duration 21.576
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module01-python-async-tb/frames/slide-6.png'

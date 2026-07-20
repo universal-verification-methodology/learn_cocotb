@@ -1,47 +1,60 @@
 {
   "module": "module07-cocotb-uvm-map",
-  "title": "cocotb \u2194 UVM roles check",
+  "title": "cocotb ↔ UVM roles check",
   "passing_score": 0.67,
   "items": [
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "In the starter map, dut dot signal on the cocotb side corresponds to…",
       "choices": [
-        "cocotb \u2194 UVM roles",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "Virtual interface / hierarchical DUT access",
+        "UVM factory override",
+        "Waveform dump only",
+        "Place-and-route constraints"
       ],
       "answer": 0,
-      "explain": "cocotb \u2194 UVM roles"
+      "explain": "Both sides need a handle into the DUT — Python dut vs SV vif."
     },
     {
       "id": "q2",
       "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
-      "answer": false,
-      "explain": "Literacy only."
+      "prompt": "await RisingEdge in cocotb plays a similar role to @posedge in SV testbench code.",
+      "answer": true,
+      "explain": "Both advance or synchronize to simulation time events."
     },
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
+      "prompt": "Plain cocotb pin assigns map most closely to which UVM role?",
       "choices": [
-        "cocotb-uvm-map",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
+        "Driver driving through vif",
+        "UVM report catcher only",
+        "RAL predictor only",
+        "Synthesis attribute"
       ],
       "answer": 0,
-      "explain": "Lab id."
+      "explain": "Direct assigns are the driver job before you hide them in an agent."
     },
     {
       "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "pyuvm agent on the Python side maps to…",
+      "choices": [
+        "uvm_agent (sequencer / driver / monitor bundle)",
+        "Only a waveform viewer",
+        "Git commit hook",
+        "SDC timing file"
+      ],
+      "answer": 0,
+      "explain": "pyuvm mirrors the SV agent box — same roles, Python classes."
+    },
+    {
+      "id": "q5",
       "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
-      "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "prompt": "This lab teaches exact one-line API equivalence between cocotb and UVM.",
+      "answer": false,
+      "explain": "Role literacy — same jobs, different language and packaging."
     }
   ]
 }

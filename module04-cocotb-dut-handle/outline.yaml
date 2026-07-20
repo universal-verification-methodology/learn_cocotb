@@ -1,7 +1,71 @@
 title: cocotb DUT handle
-footer: learn_cocotb
+footer: learn_cocotb — cocotb dut handle
 slides:
 - type: title
   title: cocotb DUT handle
-  subtitle: Scaffold
-  notes: Scaffold.
+  subtitle: Triggers tell you when to act
+  notes: 'Triggers tell you when to act. The DUT handle tells you what to poke and
+    peek. This module is that handle: how dotted paths walk the design hierarchy from
+    Python, and how dot value reads or writes a signal. Get this right and every later
+    driver or monitor is just choosing the right leaf.'
+- type: bullets
+  title: Path walk and dot value
+  bullets:
+  - Dut is the hierarchy root the simulator hands your test
+  - Attribute dots walk instances
+  - Reading dot value peeks; assigning dot value pokes
+  - A missing name raises AttributeError, there is no silent None for a bad path
+  - Deeper nests like dut dot core dot regs dot r zero are the same idea
+  notes: 'dut is the hierarchy root the simulator hands your test. Attribute dots
+    walk instances—dut dot uart dot txd means the txd signal under uart under the
+    top. Reading dot value peeks; assigning dot value pokes. A missing name raises
+    AttributeError—there is no silent None for a bad path. Deeper nests like dut dot
+    core dot regs dot r zero are the same idea: keep walking attributes until you
+    reach the leaf.'
+- type: image
+  title: Browser lab
+  image: assets/lab-starter.png
+  caption: Browser lab starter
+  notes: In the browser lab track, open the cocotb DUT handle sketch. You will see
+    a challenge panel, a path resolver, and peek or poke controls. Load the starter—dut
+    dot uart dot txd resolves with value one—then try a deeper path and a missing-path
+    demo so you see AttributeError in the sketch. Work a few challenges and use Check
+    when ready. Orient here; do not tour every button.
+- type: bullets
+  title: Real cocotb practice
+  bullets:
+  - In the real cocotb track, restate the handle idea on paper before you touch a
+    simulator
+  - 'Draw a tiny hierarchy: top, uart block, txd leaf'
+  - Write one peek line and one poke line using dot value
+  - A ghost path that fails
+  - This module is handle literacy, not a full live UART simulation yet
+  notes: 'In the real cocotb track, restate the handle idea on paper before you touch
+    a simulator. Draw a tiny hierarchy: top, uart block, txd leaf. Write one peek
+    line and one poke line using dot value. Optional: open the lab’s source sketch
+    and read the comment header—it shows resolve, poke, peek, and a ghost path that
+    fails. This module is handle literacy—not a full live UART simulation yet.'
+- type: bullets
+  title: Pitfalls to watch
+  bullets:
+  - Watch for inventing hierarchy names that are not in the netlist
+  - A common trap is forgetting dot value; the handle is not the bit by itself
+  - Another miss is treating a successful resolve as correct stimulus
+  - The browser tree is literacy
+  notes: Watch for inventing hierarchy names that are not in the netlist—AttributeError
+    is the signal you mistyped the path. A common trap is forgetting dot value; the
+    handle is not the bit by itself. Another miss is treating a successful resolve
+    as correct stimulus—peek after poke to confirm what the DUT saw. The browser tree
+    is literacy; real fidelity is driving live handles against your simulator’s DUT.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Complete the checklist for at least one track, preferably both
+  - In the browser, load the starter and try one missing-path challenge
+  - Explain path walk and dot value in your own words, then sketch one poke and one
+    peek
+  - When you are ready
+  notes: Complete the checklist for at least one track—preferably both. In the browser,
+    load the starter and try one missing-path challenge. On paper, explain path walk
+    and dot value in your own words, then sketch one poke and one peek. When you are
+    ready, take the short quiz, then continue to cocotb BinaryValue in the next module.

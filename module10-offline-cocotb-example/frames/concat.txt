@@ -1,0 +1,15 @@
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module10-offline-cocotb-example/frames/slide-1.png'
+duration 26.904
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module10-offline-cocotb-example/frames/slide-2.png'
+duration 27.576
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module10-offline-cocotb-example/frames/slide-3.png'
+duration 30.312
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module10-offline-cocotb-example/frames/slide-4.png'
+duration 29.368
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module10-offline-cocotb-example/frames/slide-5.png'
+duration 5.0
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module10-offline-cocotb-example/frames/slide-6.png'
+duration 32.232
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module10-offline-cocotb-example/frames/slide-7.png'
+duration 19.8
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module10-offline-cocotb-example/frames/slide-7.png'

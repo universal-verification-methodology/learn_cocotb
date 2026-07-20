@@ -6,48 +6,61 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module in learn_cocotb is mainly about\u2026",
+      "prompt": "learn_cocotb primarily teaches…",
       "choices": [
-        "Welcome to cocotb",
-        "Place-and-route only",
-        "Git remotes only",
-        "Writing a commercial VIP"
+        "cocotb Python testbench literacy before pyuvm",
+        "Place-and-route for FPGAs only",
+        "Git branching workflows only",
+        "Writing commercial SystemVerilog VIPs from scratch"
       ],
       "answer": 0,
-      "explain": "Focus: Welcome to cocotb."
+      "explain": "The course covers cocotb triggers, DUT handles, and self-check patterns."
     },
     {
       "id": "q2",
       "type": "multiple_choice",
-      "prompt": "Track B practice is typically\u2026",
+      "prompt": "Track A in this course means…",
       "choices": [
-        "Browser concept labs on the learning platform",
-        "Only Vivado GUI tutorials",
-        "Skipping all checklists",
-        "Uploading RTL to a grading server"
+        "Real cocotb with a local simulator such as Verilator",
+        "Only reading README files with no practice",
+        "Uploading RTL to a cloud grader",
+        "Skipping all offline toolchain setup forever"
       ],
       "answer": 0,
-      "explain": "Track B is in-browser literacy."
+      "explain": "Track A is local cocotb plus simulator for muscle memory."
     },
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "Primary practice surface for this module is\u2026",
+      "prompt": "Track B browser labs are best for…",
       "choices": [
-        "intro",
-        "Only PowerPoint",
-        "Only synthesis P&R",
-        "Only GitHub Issues"
+        "Fast intuition on async tests, triggers, and TB concepts",
+        "Replacing every offline Makefile run permanently",
+        "Synthesizing RTL to bitstreams",
+        "Running only Vivado GUI tutorials"
       ],
       "answer": 0,
-      "explain": "Lab / activity id: intro."
+      "explain": "Browser sketches teach concepts; Track A keeps fidelity."
     },
     {
       "id": "q4",
       "type": "true_false",
-      "prompt": "Browser concept labs replace a full offline toolchain for this course.",
+      "prompt": "You must finish every Track A install before starting any lab module.",
       "answer": false,
-      "explain": "Labs are literacy; Track A / offline keeps fidelity."
+      "explain": "You may start with Track B; offline depth comes in later modules."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "The first lab after this intro is…",
+      "choices": [
+        "Python async testbench",
+        "Commercial UVM scoreboard VIP authoring",
+        "FPGA place-and-route",
+        "Git rebase masterclass"
+      ],
+      "answer": 0,
+      "explain": "Module one introduces async def, await, and the cocotb test decorator."
     }
   ]
 }

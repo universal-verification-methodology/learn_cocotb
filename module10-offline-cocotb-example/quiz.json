@@ -6,42 +6,42 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "This offline module is mainly about…",
       "choices": [
-        "Run a cocotb example",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "running a real cocotb example with a simulator on your machine",
+        "browser sketch literacy only",
+        "Git branching workflows",
+        "place-and-route sign-off"
       ],
       "answer": 0,
-      "explain": "Run a cocotb example"
+      "explain": "Track A: live cocotb + sim."
     },
     {
       "id": "q2",
       "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
+      "prompt": "A browser lab pass counts as a simulator pass for this module.",
       "answer": false,
-      "explain": "Literacy only."
+      "explain": "Offline needs a real compile and run."
     },
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
+      "prompt": "The suggested starter example is…",
       "choices": [
-        "offline-cocotb-example",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
+        "module1 cocotb and_gate (make SIM=verilator TEST=test_and_gate)",
+        "a Vivado bitstream only",
+        "a SPICE netlist only",
+        "no Makefile anywhere"
       ],
       "answer": 0,
-      "explain": "Lab id."
+      "explain": "Legacy learn_uvm_pyuvm module1 cocotb test."
     },
     {
       "id": "q4",
       "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
+      "prompt": "Make should run from the folder that owns the cocotb Makefile.",
       "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "explain": "Wrong cwd often fails quietly."
     }
   ]
 }

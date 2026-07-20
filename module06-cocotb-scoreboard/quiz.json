@@ -6,42 +6,55 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "When observe matches the front of the expect queue, you should…",
       "choices": [
-        "cocotb scoreboard",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "PASS and pop the front expect",
+        "FAIL and clear the whole queue",
+        "PASS but leave the queue unchanged",
+        "Ignore the observe"
       ],
       "answer": 0,
-      "explain": "cocotb scoreboard"
+      "explain": "Match → PASS and pop front; mismatch leaves the queue for debug."
     },
     {
       "id": "q2",
       "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
-      "answer": false,
-      "explain": "Literacy only."
+      "prompt": "Observing a value when the expect queue is empty should fail.",
+      "answer": true,
+      "explain": "Nothing to compare against — empty-queue observe is a FAIL."
     },
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
+      "prompt": "Starter: push expect 0xA5, observe 0xA5. Verdict?",
       "choices": [
-        "cocotb-scoreboard",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
+        "PASS — queue empty",
+        "FAIL — mismatch",
+        "PASS — queue still has A5",
+        "FAIL — empty queue"
       ],
       "answer": 0,
-      "explain": "Lab id."
+      "explain": "One expect, one matching observe → PASS and pop."
     },
     {
       "id": "q4",
       "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
-      "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "prompt": "On mismatch you should pop the expect queue to keep moving.",
+      "answer": false,
+      "explain": "Keep the queue on mismatch so you can debug what was expected."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "The expect queue behaves like…",
+      "choices": [
+        "FIFO — order of push matches order of observe",
+        "LIFO — last pushed checked first",
+        "Random access — any expect can match",
+        "A single register — only one value ever"
+      ],
+      "answer": 0,
+      "explain": "Scoreboards compare in transaction order — FIFO."
     }
   ]
 }

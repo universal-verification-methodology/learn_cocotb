@@ -6,42 +6,48 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "Clock(dut.clk, 10, units=\"ns\").start() mainly…",
       "choices": [
-        "cocotb Clock helper",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "Launches a background coroutine that toggles clk",
+        "Blocks until simulation ends",
+        "Replaces @cocotb.test with a Makefile",
+        "Deletes the clk netlist node"
       ],
       "answer": 0,
-      "explain": "cocotb Clock helper"
+      "explain": "start runs the toggle loop alongside your async test."
     },
     {
       "id": "q2",
-      "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
-      "answer": false,
-      "explain": "Literacy only."
+      "type": "multiple_choice",
+      "prompt": "With period 10 ns, the first three posedges land at…",
+      "choices": [
+        "10, 20, 30",
+        "5, 10, 15",
+        "0, 10, 20",
+        "10, 15, 20"
+      ],
+      "answer": 0,
+      "explain": "Posedges are spaced by the full period."
     },
     {
       "id": "q3",
-      "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
-      "choices": [
-        "cocotb-clock-helper",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
-      ],
-      "answer": 0,
-      "explain": "Lab id."
+      "type": "true_false",
+      "prompt": "The Clock helper period is the full cycle length (low plus high).",
+      "answer": true,
+      "explain": "Period is not the half-period toggle interval."
     },
     {
       "id": "q4",
-      "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
-      "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "type": "multiple_choice",
+      "prompt": "After starting a Clock helper, your test typically syncs with…",
+      "choices": [
+        "await RisingEdge(dut.clk)",
+        "import pytest only",
+        "Manual dut.clk.value every half period forever",
+        "A UVM factory override"
+      ],
+      "answer": 0,
+      "explain": "Generate once with Clock; await edges in the test body."
     }
   ]
 }

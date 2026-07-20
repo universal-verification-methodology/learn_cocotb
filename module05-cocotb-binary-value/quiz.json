@@ -6,42 +6,48 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "8-bit BinaryValue(0xA5, n_bits=8) as MSB-left bits is…",
       "choices": [
-        "cocotb BinaryValue",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "10100101",
+        "10101010",
+        "01010101",
+        "11111111"
       ],
       "answer": 0,
-      "explain": "cocotb BinaryValue"
+      "explain": "0xA5 masked to 8 bits → 10100101 MSB left."
     },
     {
       "id": "q2",
-      "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
-      "answer": false,
-      "explain": "Literacy only."
+      "type": "multiple_choice",
+      "prompt": "n_bits in BinaryValue mainly…",
+      "choices": [
+        "Sets how many low bits are kept (mask applied)",
+        "Chooses the simulator executable",
+        "Names the UVM phase",
+        "Sets UART baud rate"
+      ],
+      "answer": 0,
+      "explain": "Width masks the value to the signal size."
     },
     {
       "id": "q3",
-      "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
-      "choices": [
-        "cocotb-binary-value",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
-      ],
-      "answer": 0,
-      "explain": "Lab id."
+      "type": "true_false",
+      "prompt": "BinaryValue bit strings are printed with MSB on the left.",
+      "answer": true,
+      "explain": "Index width−1 is the leftmost character."
     },
     {
       "id": "q4",
-      "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
-      "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "type": "multiple_choice",
+      "prompt": "BinaryValue(0x1FF, n_bits=8) keeps…",
+      "choices": [
+        "The low 8 bits (0xFF → 11111111)",
+        "All 9 bits unchanged",
+        "Only the MSB",
+        "Nothing — raises always"
+      ],
+      "answer": 0,
+      "explain": "Wider literals truncate to n_bits low bits."
     }
   ]
 }

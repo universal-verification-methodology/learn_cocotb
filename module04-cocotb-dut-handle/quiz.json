@@ -6,42 +6,48 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "In a cocotb test, dut is…",
       "choices": [
-        "cocotb DUT handle",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "A Makefile variable only",
+        "The hierarchy root handle from the simulator",
+        "Always a plain Python int",
+        "The UVM factory singleton"
       ],
-      "answer": 0,
-      "explain": "cocotb DUT handle"
+      "answer": 1,
+      "explain": "dut is the top handle; attribute dots walk the design tree."
     },
     {
       "id": "q2",
-      "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
-      "answer": false,
-      "explain": "Literacy only."
+      "type": "multiple_choice",
+      "prompt": "dut.uart.txd.value = 0 typically…",
+      "choices": [
+        "Deletes the uart instance",
+        "Pokes (writes) the txd signal",
+        "Registers a new @cocotb.test",
+        "Waits for RisingEdge automatically"
+      ],
+      "answer": 1,
+      "explain": "Assigning .value pokes; reading .value peeks."
     },
     {
       "id": "q3",
-      "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
-      "choices": [
-        "cocotb-dut-handle",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
-      ],
-      "answer": 0,
-      "explain": "Lab id."
+      "type": "true_false",
+      "prompt": "A missing hierarchy name like dut.uart.ghost usually raises AttributeError.",
+      "answer": true,
+      "explain": "Bad paths fail loudly; there is no silent None for a mistyped signal."
     },
     {
       "id": "q4",
-      "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
-      "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "type": "multiple_choice",
+      "prompt": "Attribute dots in dut.core.regs.r0…",
+      "choices": [
+        "Are ignored; only the last name matters",
+        "Walk nested instances until the leaf signal",
+        "Compile the DUT RTL",
+        "Mean relative filesystem paths"
+      ],
+      "answer": 1,
+      "explain": "Each dot step descends the hierarchy the same way."
     }
   ]
 }

@@ -6,42 +6,55 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "Self-checking order is best stated as…",
       "choices": [
-        "Self-check pattern",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "Stimulus → reference expect → compare → pass/fail",
+        "Wave only → human eyeball → maybe pass",
+        "Copy DUT output → expect → always pass",
+        "Finish sim → never check"
       ],
       "answer": 0,
-      "explain": "Self-check pattern"
+      "explain": "Apply inputs, compute golden expect, compare DUT output, report."
     },
     {
       "id": "q2",
       "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
-      "answer": false,
-      "explain": "Literacy only."
+      "prompt": "Setting expect equal to the DUT output you just sampled is weak checking.",
+      "answer": true,
+      "explain": "Expect must come from a reference model or known truth table."
     },
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
+      "prompt": "Starter and2: a=1, b=1, expect y=1, got y=1. Verdict?",
       "choices": [
-        "self-check-tb",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
+        "PASS",
+        "FAIL — mismatch",
+        "PASS — but only if waves look nice",
+        "Unknown — never compare AND gates"
       ],
       "answer": 0,
-      "explain": "Lab id."
+      "explain": "AND truth table: 1 AND 1 → 1; got matches expect."
     },
     {
       "id": "q4",
       "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
+      "prompt": "In cocotb, assert after await on a settled cycle fits the self-check pattern.",
       "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "explain": "Stimulus, wait for time to advance, then compare — same loop."
+    },
+    {
+      "id": "q5",
+      "type": "multiple_choice",
+      "prompt": "Why compare after #1 or a clock edge instead of immediately after poke?",
+      "choices": [
+        "Signals need time to settle — mid-transition samples lie",
+        "Simulators forbid immediate reads",
+        "Expect must always be zero",
+        "It makes waves colorful"
+      ],
+      "answer": 0,
+      "explain": "Sample after delay or edge so compare uses stable values."
     }
   ]
 }

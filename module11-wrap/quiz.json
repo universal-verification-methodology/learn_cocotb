@@ -6,42 +6,42 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module is mainly about\u2026",
+      "prompt": "The recommended next course after learn_cocotb is…",
       "choices": [
-        "cocotb complete",
-        "Place-and-route only",
-        "Git only",
-        "Nothing"
+        "learn_pyuvm",
+        "learn_digital only",
+        "learn_git only",
+        "nothing—stop here"
       ],
       "answer": 0,
-      "explain": "cocotb complete"
+      "explain": "Syllabus ladder: cocotb → pyuvm."
     },
     {
       "id": "q2",
       "type": "true_false",
-      "prompt": "Browser labs replace full offline toolchains.",
+      "prompt": "Browser sketches alone are enough before moving to pyuvm.",
       "answer": false,
-      "explain": "Literacy only."
+      "explain": "Finish module 10 offline for real cocotb confidence."
     },
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "Primary practice id is\u2026",
+      "prompt": "After this wrap you should be able to…",
       "choices": [
-        "wrap",
-        "vivado-only",
-        "gds-only",
-        "spice-only"
+        "sketch async cocotb tests, use DUT handles, and map roles toward UVM",
+        "synthesize every FPGA without a simulator",
+        "skip all Python verification",
+        "replace Accellera UVM with browser labs only"
       ],
       "answer": 0,
-      "explain": "Lab id."
+      "explain": "Core cocotb literacy from modules 01–10."
     },
     {
       "id": "q4",
       "type": "true_false",
-      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
+      "prompt": "Both browser labs and one offline run together stick best before pyuvm.",
       "answer": true,
-      "explain": "One module \u2248 one lab when possible."
+      "explain": "Dual-track recap in the wrap module."
     }
   ]
 }

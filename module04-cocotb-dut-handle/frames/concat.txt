@@ -1,0 +1,13 @@
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module04-cocotb-dut-handle/frames/slide-1.png'
+duration 19.056
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module04-cocotb-dut-handle/frames/slide-2.png'
+duration 28.632
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module04-cocotb-dut-handle/frames/slide-3.png'
+duration 26.28
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module04-cocotb-dut-handle/frames/slide-4.png'
+duration 28.776
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module04-cocotb-dut-handle/frames/slide-5.png'
+duration 25.992
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module04-cocotb-dut-handle/frames/slide-6.png'
+duration 22.128
+file '/mnt/d/proj/designs/learning/courses/learn_cocotb/module04-cocotb-dut-handle/frames/slide-6.png'

@@ -6,48 +6,61 @@
     {
       "id": "q1",
       "type": "multiple_choice",
-      "prompt": "This module in learn_cocotb is mainly about\u2026",
+      "prompt": "await RisingEdge(clk) resumes when…",
       "choices": [
-        "cocotb triggers",
-        "Place-and-route only",
-        "Git remotes only",
-        "Writing a commercial VIP"
+        "The clock next transitions from 0 to 1",
+        "Any amount of simulation time passes regardless of pins",
+        "FallingEdge always fires first",
+        "The DUT finishes synthesis"
       ],
       "answer": 0,
-      "explain": "Focus: cocotb triggers."
+      "explain": "RisingEdge waits for the next low-to-high transition on clk."
     },
     {
       "id": "q2",
       "type": "multiple_choice",
-      "prompt": "Track B practice is typically\u2026",
+      "prompt": "await Timer(N, units='ns')…",
       "choices": [
-        "Browser concept labs on the learning platform",
-        "Only Vivado GUI tutorials",
-        "Skipping all checklists",
-        "Uploading RTL to a grading server"
+        "Waits N time units without needing a pin edge",
+        "Only works when paired with RisingEdge",
+        "Replaces the cocotb scoreboard",
+        "Sets plusargs on the simulator command line"
       ],
       "answer": 0,
-      "explain": "Track B is in-browser literacy."
+      "explain": "Timer advances simulation time by a fixed delay."
     },
     {
       "id": "q3",
       "type": "multiple_choice",
-      "prompt": "Primary practice surface for this module is\u2026",
+      "prompt": "await First(A, B) completes when…",
       "choices": [
-        "cocotb-triggers",
-        "Only PowerPoint",
-        "Only synthesis P&R",
-        "Only GitHub Issues"
+        "The earliest of A or B finishes and the other is cancelled",
+        "Both A and B must finish before resume",
+        "Neither A nor B is allowed to complete",
+        "Only after reset is deasserted"
       ],
       "answer": 0,
-      "explain": "Lab / activity id: cocotb-triggers."
+      "explain": "First is a race between triggers."
     },
     {
       "id": "q4",
+      "type": "multiple_choice",
+      "prompt": "await Combine(A, B) completes when…",
+      "choices": [
+        "All listed triggers have completed",
+        "Only the first trigger completes",
+        "The Makefile default target runs",
+        "UVM verbosity is set to none"
+      ],
+      "answer": 0,
+      "explain": "Combine joins triggers and resumes at the latest completion."
+    },
+    {
+      "id": "q5",
       "type": "true_false",
-      "prompt": "Browser concept labs replace a full offline toolchain for this course.",
-      "answer": false,
-      "explain": "Labs are literacy; Track A / offline keeps fidelity."
+      "prompt": "If no rising edge occurs within the simulation horizon, RisingEdge may hang or fail.",
+      "answer": true,
+      "explain": "Edge triggers need the event they watch to actually happen."
     }
   ]
 }
