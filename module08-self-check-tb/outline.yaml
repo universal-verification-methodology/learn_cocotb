@@ -1,0 +1,7 @@
+title: Self-check pattern
+footer: learn_cocotb
+slides:
+- type: title
+  title: Self-check pattern
+  subtitle: Scaffold
+  notes: Scaffold.

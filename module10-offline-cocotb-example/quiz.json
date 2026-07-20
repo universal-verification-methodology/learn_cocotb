@@ -1,0 +1,47 @@
+{
+  "module": "module10-offline-cocotb-example",
+  "title": "Run a cocotb example check",
+  "passing_score": 0.67,
+  "items": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "This module is mainly about\u2026",
+      "choices": [
+        "Run a cocotb example",
+        "Place-and-route only",
+        "Git only",
+        "Nothing"
+      ],
+      "answer": 0,
+      "explain": "Run a cocotb example"
+    },
+    {
+      "id": "q2",
+      "type": "true_false",
+      "prompt": "Browser labs replace full offline toolchains.",
+      "answer": false,
+      "explain": "Literacy only."
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "prompt": "Primary practice id is\u2026",
+      "choices": [
+        "offline-cocotb-example",
+        "vivado-only",
+        "gds-only",
+        "spice-only"
+      ],
+      "answer": 0,
+      "explain": "Lab id."
+    },
+    {
+      "id": "q4",
+      "type": "true_false",
+      "prompt": "learn_cocotb follows the lab-driven pass-3 pattern.",
+      "answer": true,
+      "explain": "One module \u2248 one lab when possible."
+    }
+  ]
+}

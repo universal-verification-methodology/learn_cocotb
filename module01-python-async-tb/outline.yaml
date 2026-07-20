@@ -1,0 +1,21 @@
+title: Python async TB
+footer: learn_cocotb — python async tb
+slides:
+- type: title
+  title: Python async TB
+  subtitle: Scaffold module — expand with module-slides when recording
+  notes: Welcome to Python async TB. This is a scaffold transcript for learn_cocotb.
+- type: bullets
+  title: What you practice
+  bullets:
+  - Primary surface - python-async-tb
+  - Track A - local / offline practice
+  - Track B - browser lab when shipped
+  notes: Practice both tracks when you can. Browser labs build intuition; offline builds fidelity.
+- type: bullets
+  title: Your turn
+  bullets:
+  - Open EXAMPLES.md and work one prompt
+  - Open the browser lab if this module has a tool id
+  - Check off CHECKLIST.md
+  notes: Complete the checklist for at least one track, then take the short quiz.
