@@ -34,7 +34,7 @@
         "no Makefile anywhere"
       ],
       "answer": 0,
-      "explain": "Legacy learn_uvm_pyuvm module1 cocotb test."
+      "explain": "In-course learn_cocotb/examples/cocotb-hello — and-gate cocotb test."
     },
     {
       "id": "q4",

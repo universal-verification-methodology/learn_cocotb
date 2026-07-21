@@ -10,11 +10,11 @@ Browser sketches taught async tests, triggers, DUT handles, BinaryValue, scorebo
 
 ## Slide 2 — Why leave the browser
 
-Sketches are concept literacy—they do not compile a DUT or exercise cocotb Makefiles. Offline runs force you through Python packages, simulator flags, MODULE and TOPLEVEL wiring, and the glue you will keep at work. The monorepo links the legacy learn-uvm-pyuvm tree for a small and-gate cocotb test you can run today. One clean pass is enough for this module; you can deepen pyuvm tests later on the next course.
+Sketches are concept literacy—they do not compile a DUT or exercise cocotb Makefiles. Offline runs force you through Python packages, simulator flags, MODULE and TOPLEVEL wiring, and the glue you will keep at work. This course ships an in-course and-gate hello under examples/cocotb-hello—you run it with make, not a browser sketch. One clean pass is enough for this module; you can deepen pyuvm tests later on the next course.
 
 ## Slide 3 — Offline workflow
 
-Here is the rhythm. Open the legacy course next to this curriculum. Activate its virtual environment so cocotb is on your path. Change into the module-one cocotb tests folder. Run make with Verilator as the simulator and the and-gate test selected. Watch compile finish, then the cocotb runner start. Capture the command and the pass or fail line in your notes. Other simulators swap the SIM knob—same idea, different Make recipe.
+Here is the rhythm. Open examples/cocotb-hello beside this curriculum. Activate a virtual environment—or install cocotb with pip—so the Python package resolves. Change into the tests folder that owns the Makefile. Run make with Verilator as the simulator and the and-gate test selected. Watch compile finish, then the cocotb runner start. Capture the command and the pass or fail line in your notes. Other simulators swap the SIM knob—same idea, different Make recipe.
 
 ## Slide 4 — Real cocotb track practice
 

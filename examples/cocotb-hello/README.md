@@ -1,7 +1,7 @@
 # cocotb hello (and-gate)
 
 In-course Track A example for `learn_cocotb` module **10** (offline).
-Does **not** require the ignored legacy tree `learn_cocotb/examples/cocotb-hello or learn_pyuvm (legacy archive ignored)`.
+Does **not** require the ignored legacy tree `learn_uvm_pyuvm` (see [`../../LEGACY.md`](../../LEGACY.md)).
 
 ## Layout
 
