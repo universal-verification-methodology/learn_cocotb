@@ -41,17 +41,17 @@ Browser sketches taught async tests, triggers, DUT handles, BinaryValue, scorebo
 ## Real cocotb track practice — try these
 
 ```
-# cd learn_uvm_pyuvm — enter the legacy offline course
-cd courses/learn_uvm_pyuvm
+# cd learn_cocotb/examples/cocotb-hello — enter the legacy offline course
+cd courses/learn_cocotb/examples/cocotb-hello
 
-# source .venv/bin/activate — put cocotb on PATH
-source .venv/bin/activate
+# source .venv/bin/activate  # or: pip install cocotb — put cocotb on PATH
+source .venv/bin/activate  # or: pip install cocotb
 
-# ls module1/tests/cocotb_tests — find Makefile and test_and_gate.py
-ls module1/tests/cocotb_tests
+# ls tests — find Makefile and test_and_gate.py
+ls tests
 
 # make SIM=verilator TEST=test_and_gate — compile and run
-cd module1/tests/cocotb_tests
+cd tests
 make SIM=verilator TEST=test_and_gate
 
 ```

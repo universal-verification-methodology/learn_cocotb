@@ -21,17 +21,17 @@ Here is the rhythm. Open the legacy course next to this curriculum. Activate its
 In the real cocotb track, change into the legacy offline course tree so your shell sits where the examples live. Activate the virtual environment—or prepend its bin folder to your path—so cocotb resolves. List the cocotb tests directory; you should see the Makefile and the and-gate test file. Then change into that folder and run make. SIM selects the simulator—here Verilator—and TEST names which cocotb module to run—here the and-gate test. Say the working directory aloud before make so you know where the build runs from.
 
 ```bash
-# cd learn_uvm_pyuvm — enter the legacy offline course
-cd courses/learn_uvm_pyuvm
+# cd learn_cocotb/examples/cocotb-hello — enter the legacy offline course
+cd courses/learn_cocotb/examples/cocotb-hello
 
-# source .venv/bin/activate — put cocotb on PATH
-source .venv/bin/activate
+# source .venv/bin/activate  # or: pip install cocotb — put cocotb on PATH
+source .venv/bin/activate  # or: pip install cocotb
 
-# ls module1/tests/cocotb_tests — find Makefile and test_and_gate.py
-ls module1/tests/cocotb_tests
+# ls tests — find Makefile and test_and_gate.py
+ls tests
 
 # make SIM=verilator TEST=test_and_gate — compile and run
-cd module1/tests/cocotb_tests
+cd tests
 make SIM=verilator TEST=test_and_gate
 ```
 

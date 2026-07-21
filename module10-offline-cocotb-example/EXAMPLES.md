@@ -1,14 +1,9 @@
-# Examples — Run a cocotb example
+# Module 10 examples — Run a cocotb example
 
-Track A (local / offline). No browser lab for this module.
+Offline only. Use the **in-course** hello.
 
-## Prompts
+## Prompt
 
-1. Restate the core idea of **Run a cocotb example** in one sentence.
-2. In your own words, capture this beat: *Browser sketches taught async tests, triggers, DUT handles, BinaryValue, scoreboards, and wave literacy. This module is Track A only: you open a real cocotb example with a simulator such as Verilator and run it on…*
-3. From a cocotb example tree: create venv, install, run make (or note blockers).
-4. Paste the first PASS/FAIL line you see and explain it.
-
-## Stretch
-
-When ready, run the offline steps once end-to-end and note any install blockers.
+1. Open [`../examples/cocotb-hello/`](../examples/cocotb-hello/).
+2. From `tests/`, run `make SIM=verilator TEST=test_and_gate`.
+3. Record simulator + cocotb versions and the pass/fail line.

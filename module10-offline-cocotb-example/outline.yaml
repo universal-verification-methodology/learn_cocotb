@@ -58,24 +58,24 @@ slides:
     make so you know where the build runs from.
 - type: code
   title: Real cocotb track practice — try these
-  code: '# cd learn_uvm_pyuvm — enter the legacy offline course
+  code: '# cd learn_cocotb/examples/cocotb-hello — enter the legacy offline course
 
-    cd courses/learn_uvm_pyuvm
-
-
-    # source .venv/bin/activate — put cocotb on PATH
-
-    source .venv/bin/activate
+    cd courses/learn_cocotb/examples/cocotb-hello
 
 
-    # ls module1/tests/cocotb_tests — find Makefile and test_and_gate.py
+    # source .venv/bin/activate  # or: pip install cocotb — put cocotb on PATH
 
-    ls module1/tests/cocotb_tests
+    source .venv/bin/activate  # or: pip install cocotb
+
+
+    # ls tests — find Makefile and test_and_gate.py
+
+    ls tests
 
 
     # make SIM=verilator TEST=test_and_gate — compile and run
 
-    cd module1/tests/cocotb_tests
+    cd tests
 
     make SIM=verilator TEST=test_and_gate
 
