@@ -18,27 +18,18 @@ Here is the rhythm. Open examples/cocotb-hello beside this curriculum. Activate 
 
 ## Slide 4 — Real cocotb track practice
 
-In the real cocotb track, change into the legacy offline course tree so your shell sits where the examples live. Activate the virtual environment—or prepend its bin folder to your path—so cocotb resolves. List the cocotb tests directory; you should see the Makefile and the and-gate test file. Then change into that folder and run make. SIM selects the simulator—here Verilator—and TEST names which cocotb module to run—here the and-gate test. Say the working directory aloud before make so you know where the build runs from.
+In the real cocotb track, change into the cocotb-hello tests folder so your shell sits where the Makefile lives. Activate a virtual environment—or install cocotb—so the package resolves. List the folder; you should see the Makefile and the and-gate test file. Then run make. SIM selects the simulator—here Verilator—and TEST names which cocotb module to run—here the and-gate test. Say the working directory aloud before make so you know where the build runs from.
 
 ```bash
-# cd learn_cocotb/examples/cocotb-hello — enter the legacy offline course
-cd courses/learn_cocotb/examples/cocotb-hello
-
-# source .venv/bin/activate  # or: pip install cocotb — put cocotb on PATH
-source .venv/bin/activate  # or: pip install cocotb
-
-# ls tests — find Makefile and test_and_gate.py
-ls tests
-
-# make SIM=verilator TEST=test_and_gate — compile and run
-cd tests
+cd courses/learn_cocotb/examples/cocotb-hello/tests
+# optional: source a venv with cocotb installed
 make SIM=verilator TEST=test_and_gate
 ```
 
 ## Slide 5 — Pitfalls to watch
 
-Without the virtual environment, system Python may lack cocotb—activate first, or fix PATH. Make must run from the test folder that owns the Makefile; the wrong directory fails quietly or builds nothing useful. A browser sketch pass is not a simulator pass—offline needs a real binary. The first Verilator plus cocotb compile can take a minute; later rebuilds are faster when objects exist. If Verilator is missing, install it or swap SIM to a simulator your site supports.
+Without cocotb on PATH, system Python may fail the import—activate a venv first, or pip install. Make must run from the tests folder that owns the Makefile; the wrong directory fails quietly or builds nothing useful. A browser sketch pass is not a simulator pass—offline needs a real binary. The first Verilator plus cocotb compile can take a minute; later rebuilds are faster when objects exist.
 
 ## Slide 6 — Your turn
 
-Complete the offline checklist: locate a runnable example, build it, observe pass or fail, and note your simulator and package versions. Prefer module-one and-gate unless your site policy points elsewhere. When you are ready, take the short quiz, then continue to the wrap module that closes this cocotb path.
+Complete the offline checklist: locate a runnable example, build it, observe pass or fail, and note your simulator and package versions. Prefer the in-course cocotb-hello unless your site policy points elsewhere. When you are ready, take the short quiz, then continue to the wrap module that closes this cocotb path.
