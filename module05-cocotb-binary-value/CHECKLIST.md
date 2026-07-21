@@ -1,5 +1,16 @@
-# Checklist
+# Checklist — cocotb BinaryValue
 
-- [ ] EXAMPLES.md
-- [ ] Browser lab (if any)
-- [ ] Can explain in one sentence
+## Track A — Local / offline
+
+- [ ] Worked through at least one prompt in [EXAMPLES.md](EXAMPLES.md)
+- [ ] Can explain the outcome in my own words
+
+## Track B — Browser lab (`cocotb-binary-value`)
+
+- [ ] Opened the **`cocotb-binary-value`** lab (local tools server or live site)
+- [ ] Loaded starter + completed a few challenges
+
+## Done when
+
+- [ ] I can do the task offline **or** I finished the browser challenges (preferably both)
+- [ ] Short quiz attempted (when present)
